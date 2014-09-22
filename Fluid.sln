@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluid", "Fluid\Fluid.csproj", "{64DE2239-C9B4-49A8-BA98-9190B1618B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuntimeEditable", "RunTimeEditable\RuntimeEditable.csproj", "{7ECB75B0-933E-49E5-BB73-8174FDFC6DAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleApp", "SimpleApp\SimpleApp.csproj", "{593106AC-9E57-4559-A4CF-9D7735AF0D29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snoop", "Snoop\Snoop.csproj", "{6ADE40E1-7624-475C-80C5-9883AA4712EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64DE2239-C9B4-49A8-BA98-9190B1618B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DE2239-C9B4-49A8-BA98-9190B1618B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DE2239-C9B4-49A8-BA98-9190B1618B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DE2239-C9B4-49A8-BA98-9190B1618B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ECB75B0-933E-49E5-BB73-8174FDFC6DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ECB75B0-933E-49E5-BB73-8174FDFC6DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ECB75B0-933E-49E5-BB73-8174FDFC6DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ECB75B0-933E-49E5-BB73-8174FDFC6DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593106AC-9E57-4559-A4CF-9D7735AF0D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593106AC-9E57-4559-A4CF-9D7735AF0D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593106AC-9E57-4559-A4CF-9D7735AF0D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593106AC-9E57-4559-A4CF-9D7735AF0D29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADE40E1-7624-475C-80C5-9883AA4712EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADE40E1-7624-475C-80C5-9883AA4712EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADE40E1-7624-475C-80C5-9883AA4712EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADE40E1-7624-475C-80C5-9883AA4712EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

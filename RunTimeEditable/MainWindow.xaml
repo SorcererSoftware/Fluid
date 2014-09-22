@@ -1,0 +1,11 @@
+﻿<Window x:Class="RuntimeEditable.MainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:rt="clr-namespace:RuntimeEditable"
+      Title="Runtime Editable" Height="350" Width="525">
+   <TabControl Name="_tabs">
+      <TabItem Header="Errors" Name="_errorTab">
+         <TextBox VerticalScrollBarVisibility="Visible" Name="_errors" IsReadOnly="True"/>
+      </TabItem>
+   </TabControl>
+</Window>

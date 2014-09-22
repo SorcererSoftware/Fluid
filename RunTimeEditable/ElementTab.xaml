@@ -1,0 +1,60 @@
+﻿<TabItem x:Class="RuntimeEditable.ElementTab"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:rt="clr-namespace:RuntimeEditable"
+      Header="{Binding Source}"
+      mc:Ignorable="d"
+      d:DesignHeight="300" d:DesignWidth="600">
+   <DockPanel>
+      <DockPanel DockPanel.Dock="Top">
+         <Label Content="_Evaluate:"/>
+         <TextBox Name="_expression" Margin="2">
+            <TextBox.CommandBindings>
+               <CommandBinding Command="rt:Commands.Evaluate" Executed="EvaluateExpression"/>
+            </TextBox.CommandBindings>
+            <TextBox.InputBindings>
+               <KeyBinding Key="Enter" Command="rt:Commands.Evaluate"/>
+            </TextBox.InputBindings>
+         </TextBox>
+      </DockPanel>
+      <Grid>
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+         </Grid.ColumnDefinitions>
+         <DockPanel>
+            <Label Content="Context:" DockPanel.Dock="Top"/>
+            <ListView Name="_variableList" Margin="2">
+               <ListView.View>
+                  <GridView>
+                     <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Key}"/>
+                     <GridViewColumn Header="Value" Width="100" DisplayMemberBinding="{Binding Value}"/>
+                  </GridView>
+               </ListView.View>
+            </ListView>
+         </DockPanel>
+         <DockPanel Grid.Column="1">
+            <Label Content="Commands:" DockPanel.Dock="Top"/>
+            <ItemsControl Name="_commandList">
+               <ItemsControl.ItemsPanel>
+                  <ItemsPanelTemplate>
+                     <StackPanel/>
+                  </ItemsPanelTemplate>
+               </ItemsControl.ItemsPanel>
+               <ItemsControl.ItemTemplate>
+                  <DataTemplate>
+                     <Grid HorizontalAlignment="Left">
+                        <Grid.ColumnDefinitions>
+                           <ColumnDefinition SharedSizeGroup="CommandButtons" Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Content="{Binding Name}" Command="{Binding}" Padding="2" Margin="2"/>
+                     </Grid>
+                  </DataTemplate>
+               </ItemsControl.ItemTemplate>
+            </ItemsControl>
+         </DockPanel>
+      </Grid>
+   </DockPanel>
+</TabItem>
